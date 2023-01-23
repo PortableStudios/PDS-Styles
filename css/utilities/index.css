@@ -1,0 +1,9 @@
+@layer tailwind, utils;
+
+@layer tailwind {
+  @tailwind utilities;
+  @tailwind variants;
+}
+
+@layer utils {
+}

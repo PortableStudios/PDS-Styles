@@ -1,0 +1,17 @@
+@layer
+  /* ⬆️ Least powerful ⬆️ */
+  tokens, /* design tokens */
+  resets, /* low level resets and normalizations */
+  defaults, /* element defaults, for basic typography and legibility */
+  themes, /* themes, like light and dark modes */
+  layouts, /* layouts and larger page structures */
+  utils; /* overrides and utilities (named utils because tailwind is dumb) */
+  /* Un-layered styles */
+  /* ⬇️ Most powerful ⬇️ */
+
+@import url("tokens/index.css") layer(tokens);
+@import url("resets/index.css") layer(resets);
+@import url("defaults/index.css") layer(defaults);
+@import url("themes/index.css") layer(themes);
+@import url("layouts/index.css") layer(layouts);
+@import url("utilities/index.css") layer(utils);

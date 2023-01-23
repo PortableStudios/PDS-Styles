@@ -1,0 +1,9 @@
+@layer tailwind, tokens;
+
+@layer tailwind {
+  @tailwind base;
+  @tailwind components;
+}
+
+@layer tokens {
+}
