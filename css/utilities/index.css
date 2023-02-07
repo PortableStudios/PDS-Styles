@@ -1,9 +1,1 @@
-@layer tailwind, utils;
-
-@layer tailwind {
-  @tailwind utilities;
-  @tailwind variants;
-}
-
-@layer utils {
-}
+@import url("visually-hidden.css");

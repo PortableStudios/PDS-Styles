@@ -1,9 +1,2 @@
-@layer tailwind, tokens;
-
-@layer tailwind {
-  @tailwind base;
-  @tailwind components;
-}
-
-@layer tokens {
-}
+@import url("type.css");
+@import url("space.css");

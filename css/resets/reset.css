@@ -1,14 +1,3 @@
-/*
-  Made by Elly Loel - https://ellyloel.com/
-  With inspiration from:
-    - Josh W Comeau - https://courses.joshwcomeau.com/css-for-js/treasure-trove/010-global-styles/
-    - Andy Bell - https://piccalil.li/blog/a-modern-css-reset/
-    - Adam Argyle - https://unpkg.com/open-props@1.3.16/normalize.min.css / https://codepen.io/argyleink/pen/KKvRORE
-
-  Notes:
-    - `:where()` is used to lower specificity for easy overriding.
-*/
-
 * {
   /* Remove default margin on everything */
   margin: 0;

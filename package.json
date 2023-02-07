@@ -4,20 +4,21 @@
   "author": "Elly Loel <hello@ellyloel.com>",
   "license": "MIT",
   "type": "module",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "start": "npx postcss css/all.css -o dist/css/all.css -- --watch",
     "build": "npx postcss css/all.css -o dist/css/all.css"
   },
-  "dependencies": {
-    "cssremedy": "^0.1.0-beta.2"
-  },
   "devDependencies": {
     "cssnano": "^5.1.14",
+    "cssremedy": "0.1.0-beta.2",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-js": "^4.0.0",
-    "slugify": "^1.6.5",
-    "tailwindcss": "^3.2.4"
+    "postcss-preset-env": "^8.0.1",
+    "slugify": "^1.6.5"
   }
 }
