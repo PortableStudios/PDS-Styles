@@ -1,3 +1,48 @@
-:root {
+:root,
+[color-scheme="light"] {
   color-scheme: light dark;
+
+  --Canvas: ;
+  --CanvasText: ;
+  --LinkText: ;
+  --VisitedText: ;
+  --ActiveText: ;
+  --ButtonFace: ;
+  --ButtonText: ;
+  --ButtonBorder: ;
+  --Field: ;
+  --FieldText: ;
+  --Highlight: ;
+  --HighlightText: ;
+  --SelectedItem: ;
+  --SelectedItemText: ;
+  --Mark: ;
+  --MarkText: ;
+  --GrayText: ;
+  --AccentColor: ;
+  --AccentColorText: ;
+}
+
+[color-scheme="dark"] {
+  color-scheme: dark light;
+
+  --Canvas: ;
+  --CanvasText: ;
+  --LinkText: ;
+  --VisitedText: ;
+  --ActiveText: ;
+  --ButtonFace: ;
+  --ButtonText: ;
+  --ButtonBorder: ;
+  --Field: ;
+  --FieldText: ;
+  --Highlight: ;
+  --HighlightText: ;
+  --SelectedItem: ;
+  --SelectedItemText: ;
+  --Mark: ;
+  --MarkText: ;
+  --GrayText: ;
+  --AccentColor: ;
+  --AccentColorText: ;
 }

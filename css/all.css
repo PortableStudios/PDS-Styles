@@ -5,7 +5,7 @@
   defaults, /* element defaults, for basic typography and legibility */
   themes, /* themes, like light and dark modes */
   layouts, /* layouts and larger page structures */
-  utils; /* overrides and utilities (named utils because tailwind is dumb) */
+  utilities; /* overrides and utilities */
   /* Un-layered styles */
   /* ⬇️ Most powerful ⬇️ */
 
@@ -14,4 +14,4 @@
 @import url("defaults/index.css") layer(defaults);
 @import url("themes/index.css") layer(themes);
 @import url("layouts/index.css") layer(layouts);
-@import url("utilities/index.css") layer(utils);
+@import url("utilities/index.css") layer(utilities);

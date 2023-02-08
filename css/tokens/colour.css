@@ -1,0 +1,60 @@
+:root {
+  /* https://drafts.csswg.org/css-color/#css-system-colors */
+
+  /* Background of application content or documents. */
+  --Canvas: ;
+
+  /* Text in application content or documents. */
+  --CanvasText: ;
+
+  /* Text in non-active, non-visited links. For light backgrounds, traditionally blue. */
+  --LinkText: ;
+
+  /* Text in visited links. For light backgrounds, traditionally purple. */
+  --VisitedText: ;
+
+  /* Text in active links. For light backgrounds, traditionally red. */
+  --ActiveText: ;
+
+  /* The face background color for push buttons. */
+  --ButtonFace: ;
+
+  /* Text on push buttons. */
+  --ButtonText: ;
+
+  /* The base border color for push buttons. */
+  --ButtonBorder: ;
+
+  /* Background of input fields. */
+  --Field: ;
+
+  /* Text in input fields. */
+  --FieldText: ;
+
+  /* Background of selected text, for example from ::selection. */
+  --Highlight: ;
+
+  /* Text of selected text. */
+  --HighlightText: ;
+
+  /* Background of selected items, for example a selected checkbox. */
+  --SelectedItem: ;
+
+  /* Text of selected items. */
+  --SelectedItemText: ;
+
+  /* Background of text that has been specially marked (such as by the HTML mark element). */
+  --Mark: ;
+
+  /* Text that has been specially marked (such as by the HTML mark element). */
+  --MarkText: ;
+
+  /* Disabled text. (Often, but not necessarily, gray.) */
+  --GrayText: ;
+
+  /* Background of accented user interface controls. */
+  --AccentColor: ;
+
+  /* Text of accented user interface controls. */
+  --AccentColorText: ;
+}
