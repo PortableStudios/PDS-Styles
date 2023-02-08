@@ -8,8 +8,8 @@
     "defaults"
   ],
   "scripts": {
-    "start": "npx postcss css/all.css -o dist/css/all.css -- --watch",
-    "build": "npx postcss css/all.css -o dist/css/all.css"
+    "start": "npx postcss css/all.css -o dist/styles.css -- --watch",
+    "build": "npx postcss css/all.css -o dist/styles.css"
   },
   "devDependencies": {
     "cssnano": "^5.1.14",
