@@ -8,11 +8,10 @@
 - [ ] Go over reset
 - [ ] Finish adding basic themes
 - [ ] Remove `tokens/colour.css` but first move comments to docs
-- [ ] Docs for all the different styles (tokens, resets, defaults, themes, layouts, utilities)
 
 ## Installation
 
-**This is not setup yet**
+**🚨 This is not setup yet 🚨**
 
 ```sh
 npm install @pds/styles
