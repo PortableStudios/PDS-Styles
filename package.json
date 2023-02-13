@@ -8,7 +8,6 @@
     "defaults"
   ],
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0-beta.3",
     "cssnano": "^5.1.14",
     "cssremedy": "0.1.0-beta.2",
     "postcss": "^8.4.21",
@@ -16,89 +15,11 @@
     "postcss-import": "^15.1.0",
     "postcss-js": "^4.0.0",
     "postcss-preset-env": "^8.0.1",
-    "rimraf": "^4.1.2",
-    "slugify": "^1.6.5",
-    "wireit": "^0.9.5"
+    "rimraf": "^4.1.2"
   },
   "scripts": {
-    "start": "wireit",
-    "build": "wireit",
-    "clean": "wireit",
-    "start:docs": "wireit",
-    "build:docs": "wireit",
-    "clean:docs": "wireit",
-    "start:css": "wireit",
-    "build:css": "wireit",
-    "clean:css": "wireit"
-  },
-  "wireit": {
-    "start": {
-      "dependencies": [
-        "start:css",
-        "start:docs"
-      ]
-    },
-    "build": {
-      "dependencies": [
-        "build:css",
-        "build:docs"
-      ]
-    },
-    "clean": {
-      "dependencies": [
-        "clean:css",
-        "clean:docs"
-      ]
-    },
-    "start:docs": {
-      "command": "eleventy --serve --incremental",
-      "files": [
-        "eleventy.config.js",
-        "docs/**"
-      ],
-      "service": true,
-      "dependencies": [
-        "clean:docs"
-      ]
-    },
-    "build:docs": {
-      "command": "eleventy",
-      "files": [
-        "eleventy.config.js",
-        "docs/**"
-      ],
-      "output": [
-        "dist/docs/**"
-      ],
-      "clean": "if-file-deleted"
-    },
-    "clean:docs": {
-      "command": "rimraf dist/docs"
-    },
-    "start:css": {
-      "command": "postcss css/all.css -o dist/css/styles.css --watch --verbose",
-      "files": [
-        "postcss.config.js",
-        "css/**"
-      ],
-      "service": true,
-      "dependencies": [
-        "clean:css"
-      ]
-    },
-    "build:css": {
-      "command": "postcss css/all.css -o dist/css/styles.css",
-      "files": [
-        "postcss.config.js",
-        "css/**"
-      ],
-      "output": [
-        "dist/css/**"
-      ],
-      "clean": "if-file-deleted"
-    },
-    "clean:css": {
-      "command": "rimraf dist/css"
-    }
+    "start": "postcss css/all.css -o dist/pds-styles.css --watch --verbose",
+    "build": "postcss css/all.css -o dist/pds-styles.css",
+    "clean": "rimraf dist"
   }
 }
