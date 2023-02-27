@@ -1,0 +1,13 @@
+input,
+select,
+textarea {
+  background-color: var(--Field);
+  border: medium solid var(--field-border, var(--border, currentColor));
+  color: var(--FieldText);
+  padding: var(--space-3xs);
+}
+
+textarea {
+  min-height: calc(1.4em * 6);
+  min-height: 6lh;
+}

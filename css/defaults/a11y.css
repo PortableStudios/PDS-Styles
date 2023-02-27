@@ -1,0 +1,8 @@
+:is(main, nav):focus {
+  outline: 0;
+}
+
+:focus-visible {
+  outline: medium solid var(--focus-ring, var(--AccentColor));
+  outline-offset: var(--space-3xs, 0.25em);
+}
