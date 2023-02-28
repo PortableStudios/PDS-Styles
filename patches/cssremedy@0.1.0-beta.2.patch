@@ -1,3 +1,55 @@
+diff --git a/css/remedy.css b/css/remedy.css
+index ccb4ca7c0548e3a7c81b22f3967749590aa3109f..85ba35e59dc9cde3f6bf5dba2a46e7bae6057062 100644
+--- a/css/remedy.css
++++ b/css/remedy.css
+@@ -71,7 +71,10 @@ note: |
+ 
+ category: typography
+ */
+-h1 { margin: 0.67em 0; }
++h1 {
++  margin-block: 0.67em;
++  margin-inline: 0;
++}
+ 
+ 
+ /* @docs
+@@ -99,7 +102,7 @@ hr {
+   border-style: solid;
+   border-width: 1px 0 0;
+   color: inherit;
+-  height: 0;
++  block-size: 0;
+   overflow: visible;
+ }
+ 
+@@ -117,7 +120,7 @@ category: embedded elements
+ img, svg, video, canvas, audio, iframe, embed, object {
+   display: block;
+   vertical-align: middle;
+-  max-width: 100%;
++  max-inline-size: 100%;
+ }
+ 
+ 
+@@ -133,7 +136,7 @@ note: |
+ category: embedded elements
+ */
+ img, svg, video, canvas {
+-  height: auto;
++  block-size: auto;
+ }
+ 
+ 
+@@ -146,7 +149,7 @@ note: |
+ 
+ category: embedded elements
+ */
+-audio { width: 100%; }
++audio { inline-size: 100%; }
+ 
+ 
+ /* @docs
 diff --git a/css/reminders.css b/css/reminders.css
 index e99674c8338032be32cb8830027f117d1ab94a7d..1186e2f94cda607219990dc41ee868e818b44fe5 100644
 --- a/css/reminders.css
