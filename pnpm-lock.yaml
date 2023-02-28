@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  cssremedy@0.1.0-beta.2:
+    hash: irskwyst4rs6xehwiapzuh3xhy
+    path: patches/cssremedy@0.1.0-beta.2.patch
+
 specifiers:
   cssnano: ^5.1.14
   cssremedy: 0.1.0-beta.2
@@ -12,7 +17,7 @@ specifiers:
 
 devDependencies:
   cssnano: 5.1.14_postcss@8.4.21
-  cssremedy: 0.1.0-beta.2
+  cssremedy: 0.1.0-beta.2_irskwyst4rs6xehwiapzuh3xhy
   postcss: 8.4.21
   postcss-cli: 10.1.0_postcss@8.4.21
   postcss-import: 15.1.0_postcss@8.4.21
@@ -563,9 +568,10 @@ packages:
       css-tree: 1.1.3
     dev: true
 
-  /cssremedy/0.1.0-beta.2:
+  /cssremedy/0.1.0-beta.2_irskwyst4rs6xehwiapzuh3xhy:
     resolution: {integrity: sha512-6mpPQzoUQHY7fiAxWCQDgPz73j5ugz2LqU62BLohUsxYurYLdTHQc+ilPm4i52wU2SxzPTrcRMIdniE2zGfjOA==}
     dev: true
+    patched: true
 
   /dependency-graph/0.11.0:
     resolution: {integrity: sha512-JeMq7fEshyepOWDfcfHK06N3MhyPhz++vtqWhMT5O9A3K42rdsEDpfdVqjaqaAhsw6a+ZqeDvQVtD0hFHQWrzg==}

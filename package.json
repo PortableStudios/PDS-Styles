@@ -21,5 +21,10 @@
     "start": "postcss css/all.css -o dist/pds-styles.css --watch --verbose",
     "build": "postcss css/all.css -o dist/pds-styles.css",
     "clean": "rimraf dist"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "cssremedy@0.1.0-beta.2": "patches/cssremedy@0.1.0-beta.2.patch"
+    }
   }
 }

@@ -1,0 +1,56 @@
+diff --git a/css/reminders.css b/css/reminders.css
+index e99674c8338032be32cb8830027f117d1ab94a7d..1186e2f94cda607219990dc41ee868e818b44fe5 100644
+--- a/css/reminders.css
++++ b/css/reminders.css
+@@ -26,9 +26,9 @@ links:
+ 
+ category: navigation
+ */
+-/* nav ul {
++nav ul {
+   list-style: none;
+-} */
++}
+ 
+ 
+ /* @docs
+@@ -43,10 +43,10 @@ links:
+ 
+ category: navigation
+ */
+-/* nav li:before {
++nav li:before {
+   content: "\200B";
+   position: absolute;
+-} */
++}
+ 
+ 
+ /* @docs
+@@ -61,7 +61,7 @@ links:
+ 
+ category: accessibility
+ */
+-/* @media (prefers-reduced-motion: reduce) {
++@media (prefers-reduced-motion: reduce) {
+   *, ::before, ::after {
+     animation-delay: -1s !important;
+     animation-duration: 1s !important;
+@@ -70,7 +70,7 @@ category: accessibility
+     scroll-behavior: auto !important;
+     transition-duration: 0s !important;
+   }
+-} */
++}
+ 
+ 
+ /* @docs
+@@ -98,6 +98,6 @@ todo: |
+ 
+ category: typography
+ */
+-/* html { line-height: 1.5; }
++html { line-height: 1.5; }
+ h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
+-caption, figcaption, label, legend { line-height: 1.375; } */
++caption, figcaption, label, legend { line-height: 1.375; }
