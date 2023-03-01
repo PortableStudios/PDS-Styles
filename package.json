@@ -1,30 +1,36 @@
 {
-  "name": "styles",
-  "version": "0.0.1",
-  "author": "Elly Loel <hello@ellyloel.com>",
-  "license": "MIT",
-  "type": "module",
-  "browserslist": [
-    "defaults"
-  ],
-  "devDependencies": {
-    "cssnano": "^5.1.14",
-    "cssremedy": "0.1.0-beta.2",
-    "postcss": "^8.4.21",
-    "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0",
-    "postcss-js": "^4.0.0",
-    "postcss-preset-env": "^8.0.1",
-    "rimraf": "^4.1.2"
-  },
-  "scripts": {
-    "start": "postcss css/all.css -o dist/pds-styles.css --watch --verbose",
-    "build": "postcss css/all.css -o dist/pds-styles.css",
-    "clean": "rimraf dist"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "cssremedy@0.1.0-beta.2": "patches/cssremedy@0.1.0-beta.2.patch"
-    }
-  }
+	"name": "styles",
+	"version": "0.0.1",
+	"author": "Elly Loel <hello@ellyloel.com>",
+	"license": "MIT",
+	"type": "module",
+	"browserslist": [
+		"defaults"
+	],
+	"devDependencies": {
+		"cssnano": "^5.1.14",
+		"cssremedy": "0.1.0-beta.2",
+		"postcss": "^8.4.21",
+		"postcss-cli": "^10.1.0",
+		"postcss-import": "^15.1.0",
+		"postcss-js": "^4.0.0",
+		"postcss-preset-env": "^8.0.1",
+		"prettier": "^2.8.4",
+		"rimraf": "^4.1.2",
+		"stylelint": "^15.2.0",
+		"stylelint-config-standard": "^30.0.1",
+		"stylelint-order": "^6.0.2"
+	},
+	"scripts": {
+		"start": "postcss css/all.css -o dist/pds-styles.css --watch --verbose",
+		"build": "postcss css/all.css -o dist/pds-styles.css",
+		"clean": "rimraf dist",
+		"format": "prettier . --write",
+		"lint": "stylelint \"css/**/*.css\" --fix"
+	},
+	"pnpm": {
+		"patchedDependencies": {
+			"cssremedy@0.1.0-beta.2": "patches/cssremedy@0.1.0-beta.2.patch"
+		}
+	}
 }
