@@ -1,0 +1,92 @@
+input,
+textarea {
+	background-color: var(--Field, Field);
+	color: var(--FieldText, FieldText);
+}
+
+input:not([type="checkbox"], [type="radio"]),
+select,
+textarea,
+input[type="file"]::file-selector-button {
+	display: block;
+	font: inherit;
+	margin-block-end: 1em;
+	width: 100%;
+}
+
+label,
+select,
+button,
+[tabindex]:not([tabindex*="-"]),
+input:is(
+		[type="checkbox"],
+		[type="file"],
+		[type="image"],
+		[type="radio"],
+		[type="range"],
+		[type="reset"]
+	) {
+	cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+	background-color: var(--ButtonFace, ButtonFace);
+	border-color: var(--ButtonBorder, ButtonBorder);
+	color: var(--ButtonText, ButtonText);
+	cursor: pointer;
+	font: inherit;
+	margin: 0;
+	padding: 0.25em 1em;
+}
+
+input[type="range"]::-moz-range-thumb {
+	cursor: grab;
+
+	&:active {
+		cursor: grabbing;
+	}
+}
+
+/*
+ * Had to duplicate the above code because if a browser finds one selector it doesn’t understand it
+ * ignores all of them, even with `:is()` and `:where()` which are meant to be forgiving (which is odd)
+ */
+input[type="range"]::-webkit-slider-thumb {
+	cursor: grab;
+
+	&:active {
+		cursor: grabbing;
+	}
+}
+
+textarea {
+	min-height: 6em;
+	resize: vertical;
+	resize: block; /* Not yet well supported, so keeping in a fallback for now */
+}
+
+button,
+input[type="reset"] {
+	background-color: var(--ButtonFace, ButtonFace);
+	border-color: var(--ButtonBorder, ButtonBorder);
+	color: var(--ButtonText, ButtonText);
+	font: inherit;
+	margin: 0;
+	padding: 0.25em 1em;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"],
+progress {
+	accent-color: var(--SelectedItem, SelectedItem);
+}
+
+[aria-pressed="true"] {
+	border: medium solid;
+}
+
+[disabled] {
+	color: var(--GrayText, GrayText);
+	cursor: not-allowed;
+}

@@ -1,0 +1,36 @@
+dd,
+dir,
+menu,
+ol,
+ul,
+blockquote,
+figure {
+	padding-inline: var(--space-s, 1em);
+}
+
+nav,
+header,
+main,
+footer,
+section,
+article,
+details {
+	margin-block: var(--space-s, 1em);
+}
+
+main {
+	border-block: thick double;
+	padding-block: var(--space-s, 1em);
+}
+
+table {
+	width: 100%;
+}
+
+summary {
+	cursor: pointer;
+}
+
+p:empty {
+	display: none;
+}

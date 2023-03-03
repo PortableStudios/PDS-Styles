@@ -3,6 +3,22 @@
 }
 
 :focus-visible {
-	outline: medium solid var(--focus-ring, var(--AccentColor));
-	outline-offset: var(--space-3xs, 0.25em);
+	outline: medium solid var(--focus-ring, var(--AccentColor, AccentColor));
+}
+
+:not(:active):focus-visible {
+	outline-offset: 4px;
+}
+
+/* Animate focus outline */
+@media (prefers-reduced-motion: no-preference) {
+	:focus-visible {
+		transition-duration: 145ms;
+		transition-property: outline-offset;
+		transition-timing-function: cubic-bezier(0.25, 0, 0.4, 1);
+	}
+
+	:not(:active):focus-visible {
+		transition-duration: 250ms;
+	}
 }
