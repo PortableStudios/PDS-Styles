@@ -481,7 +481,7 @@
 				<li>List item four</li>
 			</ol>
 			<p><code>output</code>:</p>
-			<form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+			<form onsubmit="return false" oninput="o.value = parseInt(a.value || 0) + parseInt(b.value || 0)">
 				<input name="a" type="text" inputmode="numeric" pattern="[0-9]*"> +
 				<input name="b" type="text" inputmode="numeric" pattern="[0-9]*"> =
 				<output name="o" for="a b"></output>
