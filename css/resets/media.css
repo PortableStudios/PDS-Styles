@@ -17,17 +17,6 @@ svg {
 	fill: var(--fill, var(--svg, currentcolor));
 	stroke: var(--stroke, var(--svg, currentcolor));
 	stroke-width: 0;
-
-	&:not([fill]) {
-		fill: none;
-		stroke: currentcolor;
-		stroke-linecap: round;
-		stroke-linejoin: round;
-	}
-
-	&:not([width]) {
-		inline-size: 5rem;
-	}
 }
 
 [data-icon] {
