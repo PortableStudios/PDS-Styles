@@ -8,6 +8,7 @@
 		"defaults"
 	],
 	"devDependencies": {
+		"a11y.css": "^5.2.0",
 		"cssnano": "^5.1.14",
 		"cssremedy": "0.1.0-beta.2",
 		"postcss": "^8.4.21",
