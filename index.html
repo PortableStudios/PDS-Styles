@@ -511,123 +511,129 @@ A leaflet.
 			<br><br>
 			<h4 id="tables"><a href="#tables">#</a> Tables</h4>
 			<hr>
-			<table>
-				<caption>
-					Tables can have captions now.
-				</caption>
-				<tbody>
-					<tr>
-						<th>Person</th>
-						<th>Number</th>
-						<th>Third Column</th>
-					</tr>
-					<tr>
-						<td>Someone Lastname</td>
-						<td>900</td>
-						<td>Nullam quis risus eget urna mollis ornare vel eu leo.</td>
-					</tr>
-					<tr>
-						<td><a href="#">Person Name</a></td>
-						<td>1200</td>
-						<td>
-							Vestibulum id ligula porta felis euismod semper. Donec
-							ullamcorper nulla non metus auctor fringilla.
-						</td>
-					</tr>
-					<tr>
-						<td>Another Person</td>
-						<td>1500</td>
-						<td>
-							Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-							auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						</td>
-					</tr>
-					<tr>
-						<td>Last One</td>
-						<td>2800</td>
-						<td>
-							Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-							Cras mattis consectetur purus sit amet fermentum.
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<div style="overflow-x: auto;">
+				<table>
+					<caption>
+						Tables can have captions now.
+					</caption>
+					<tbody>
+						<tr>
+							<th>Person</th>
+							<th>Number</th>
+							<th>Third Column</th>
+						</tr>
+						<tr>
+							<td>Someone Lastname</td>
+							<td>900</td>
+							<td>Nullam quis risus eget urna mollis ornare vel eu leo.</td>
+						</tr>
+						<tr>
+							<td><a href="#">Person Name</a></td>
+							<td>1200</td>
+							<td>
+								Vestibulum id ligula porta felis euismod semper. Donec
+								ullamcorper nulla non metus auctor fringilla.
+							</td>
+						</tr>
+						<tr>
+							<td>Another Person</td>
+							<td>1500</td>
+							<td>
+								Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+								auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</td>
+						</tr>
+						<tr>
+							<td>Last One</td>
+							<td>2800</td>
+							<td>
+								Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+								Cras mattis consectetur purus sit amet fermentum.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 			<p id="table-summary">
 				In the following table, characteristics are given in the second
 				column, with the negative side in the left column and the positive
 				side in the right column.
 			</p>
-			<table aria-describedby="table-summary">
-				<caption>
-					Characteristics with positive and negative sides
-				</caption>
-				<thead>
-					<tr>
-						<th id="n">Negative</th>
-						<th>Characteristic</th>
-						<th id="p">Positive</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td headers="n r1">Sad</td>
-						<th id="r1">Mood</th>
-						<td headers="p r1">Happy</td>
-					</tr>
-					<tr>
-						<td headers="n r2">Failing</td>
-						<th id="r2">Grade</th>
-						<td headers="p r2">Passing</td>
-					</tr>
-				</tbody>
-			</table>
-			<table>
-				<caption>
-					Complex table with a
-					<code>thead</code>, multiple
-					<code>tbody</code>
-					elements, and a
-					<code>tfoot</code>.
-				</caption>
-				<thead>
-					<tr>
-						<th></th>
-						<th>2008</th>
-						<th>2007</th>
-						<th>2006</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th>Net sales</th>
-						<td>$32,479</td>
-						<td>$24,006</td>
-						<td>$19,315</td>
-					</tr>
-					<tr>
-						<th>Cost of sales</th>
-						<td>21,334</td>
-						<td>15,852</td>
-						<td>13,717</td>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<th>Gross margin</th>
-						<td>$11,145</td>
-						<td>$8,154</td>
-						<td>$5,598</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<th>Gross margin percentage</th>
-						<td>34.3%</td>
-						<td>34.0%</td>
-						<td>29.0%</td>
-					</tr>
-				</tfoot>
-			</table>
+			<div style="overflow-x: auto;">
+				<table aria-describedby="table-summary">
+					<caption>
+						Characteristics with positive and negative sides
+					</caption>
+					<thead>
+						<tr>
+							<th id="n">Negative</th>
+							<th>Characteristic</th>
+							<th id="p">Positive</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td headers="n r1">Sad</td>
+							<th id="r1">Mood</th>
+							<td headers="p r1">Happy</td>
+						</tr>
+						<tr>
+							<td headers="n r2">Failing</td>
+							<th id="r2">Grade</th>
+							<td headers="p r2">Passing</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div style="overflow-x: auto;">
+				<table>
+					<caption>
+						Complex table with a
+						<code>thead</code>, multiple
+						<code>tbody</code>
+						elements, and a
+						<code>tfoot</code>.
+					</caption>
+					<thead>
+						<tr>
+							<th></th>
+							<th>2008</th>
+							<th>2007</th>
+							<th>2006</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Net sales</th>
+							<td>$32,479</td>
+							<td>$24,006</td>
+							<td>$19,315</td>
+						</tr>
+						<tr>
+							<th>Cost of sales</th>
+							<td>21,334</td>
+							<td>15,852</td>
+							<td>13,717</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th>Gross margin</th>
+							<td>$11,145</td>
+							<td>$8,154</td>
+							<td>$5,598</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>Gross margin percentage</th>
+							<td>34.3%</td>
+							<td>34.0%</td>
+							<td>29.0%</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
 			<footer>
 				<p>
 					See the
