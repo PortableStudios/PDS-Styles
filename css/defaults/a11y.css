@@ -3,7 +3,7 @@
 }
 
 :focus-visible {
-	outline: medium solid var(--focus-ring, var(--AccentColor, AccentColor));
+	outline-color: var(--focus-ring, var(--AccentColor, AccentColor));
 }
 
 :not(:active):focus-visible {

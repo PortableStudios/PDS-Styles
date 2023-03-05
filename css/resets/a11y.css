@@ -1,0 +1,58 @@
+:focus-visible {
+	outline: medium solid var(--Highlight, Highlight);
+}
+
+[aria-pressed="true"] {
+	border: medium solid;
+}
+
+:is(
+		label[for],
+		label:has(input),
+		select,
+		button,
+		[tabindex]:not([tabindex*="-"]),
+		input:is(
+				[type="checkbox"],
+				[type="file"],
+				[type="image"],
+				[type="radio"],
+				[type="range"]
+			)
+	) {
+	cursor: pointer;
+}
+
+::-moz-range-thumb {
+	cursor: grab;
+
+	&:active {
+		cursor: grabbing;
+	}
+}
+
+/*
+ * Had to duplicate the above code because we can't use `:is()`/`:where()` for a forgiving selector as they don't support pseudo elements
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/:is#forgiving_selector_parsing
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/:is#is_does_not_select_pseudo-elements
+ */
+::-webkit-slider-thumb {
+	cursor: grab;
+
+	&:active {
+		cursor: grabbing;
+	}
+}
+
+:is(
+		input[disabled] ~ label[for],
+		label[for]:has(~ input[disabled]),
+		label:has(input[disabled]),
+		[disabled]
+	) {
+	cursor: not-allowed;
+}
+
+[disabled] {
+	color: var(--GrayText, GrayText);
+}
