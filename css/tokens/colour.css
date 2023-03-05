@@ -12,7 +12,7 @@
 	--Highlight: hsl(212deg 99% 85%);
 	--HighlightText: hsl(0deg 0% 0%);
 	--SelectedItem: hsl(213deg 100% 44%);
-	--SelectedItemText: hsl(0deg 0% 100%);
+	--SelectedItemText: hsl(0deg 0% 0%);
 	--Mark: hsl(60deg 100% 50%);
 	--MarkText: hsl(0deg 0% 0%);
 	--GrayText: hsl(0deg 0% 43%);
@@ -34,8 +34,8 @@
 		--FieldText: hsl(240deg 70% 99%);
 		--Highlight: hsl(212deg 38% 40%);
 		--HighlightText: hsl(0deg 0% 0%);
-		--SelectedItem: hsl(214deg 100% 41%);
-		--SelectedItemText: hsl(0deg 0% 100%);
+		--SelectedItem: hsl(212deg 100% 80%);
+		--SelectedItemText: hsl(240deg 70% 99%);
 		--Mark: hsl(60deg 100% 50%);
 		--MarkText: hsl(0deg 0% 0%);
 		--GrayText: hsl(252deg 3% 47%);
