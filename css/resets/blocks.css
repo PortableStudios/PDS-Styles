@@ -19,7 +19,6 @@ details {
 }
 
 main {
-	border-block: thick double;
 	padding-block: var(--space-s, 1em);
 }
 
