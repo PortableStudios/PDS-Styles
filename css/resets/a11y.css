@@ -7,6 +7,7 @@
 }
 
 :is(
+		summary,
 		label[for],
 		label:has(input),
 		select,

@@ -1,0 +1,6 @@
+@layer defaults, themes, layouts, utilities;
+
+@import url("defaults/index.css") layer(defaults);
+@import url("themes/index.css") layer(themes);
+@import url("layouts/index.css") layer(layouts);
+@import url("utilities/index.css") layer(utilities);

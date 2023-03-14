@@ -1,10 +1,10 @@
+blockquote,
 dd,
 dir,
+figure,
 menu,
 ol,
-ul,
-blockquote,
-figure {
+ul {
 	padding-inline: var(--space-s, 1em);
 }
 
@@ -24,11 +24,43 @@ main {
 }
 
 table {
+	border-collapse: collapse;
 	width: 100%;
 }
 
-summary {
-	cursor: pointer;
+th,
+td {
+	border: thin solid var(--CanvasText, CanvasText);
+	padding: var(--space-2xs, 0.5em);
+}
+
+code,
+kbd,
+pre,
+samp {
+	border: thin solid var(--ButtonBorder, ButtonBorder);
+}
+
+pre {
+	overflow: auto;
+	padding: var(--space-3xs, 0.25em) var(--space-2xs, 0.5em);
+}
+
+code,
+kbd,
+samp {
+	padding: var(--space-4xs, 0.125em) var(--space-3xs, 0.25em);
+}
+
+pre :is(code, kbd, samp) {
+	border: none;
+	padding: 0;
+}
+
+pre code {
+	hyphens: none;
+	tab-size: 4;
+	white-space: pre;
 }
 
 p:empty {

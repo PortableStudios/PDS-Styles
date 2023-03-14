@@ -21,22 +21,17 @@ header {
  * LIST ELEMENTS *
  *****************/
 
-ul,
-ol {
+:is(ul, ol):not([class]) {
 	padding-inline-start: var(--space-s, 1em);
 }
 
-li:where(:not(:first-child)) {
+li:not(:first-child) {
 	margin-block-start: var(--space-4xs, 0.125em);
 }
 
 /******************
  * TABLE ELEMENTS *
  ******************/
-
-table {
-	width: 100%;
-}
 
 th {
 	padding: var(
@@ -71,14 +66,9 @@ blockquote {
 details,
 figure,
 pre {
-	background-color: var(--shadow, hsl(0deg 0% 0% / 12.5%));
+	background-color: var(--shadow, hsl(0deg 0% 50% / 12.5%));
 	margin-inline: 0;
 	padding: var(--space-s, 1em);
-}
-
-pre code {
-	display: block;
-	overflow: auto;
 }
 
 pre[class*="language-"] {
@@ -128,6 +118,34 @@ kbd,
 samp {
 	font-family: var(--font-code, var(--var-mono, var(--ui-mono)));
 	font-size: var(--smaller, 0.8em);
+}
+
+kbd.key {
+	--kbd-color-background: var(--Canvas);
+	--kbd-color-border: var(--ButtonBorder);
+	--kbd-color-text: var(--CanvasText);
+
+	background-color: var(--kbd-color-background);
+	border: 1px solid var(--kbd-color-border);
+	border-radius: 0.25rem;
+	box-shadow: 0 2px 0 1px var(--kbd-color-border);
+	color: var(--kbd-color-text);
+	display: inline-block;
+	font-family: inherit;
+	font-size: 0.75em;
+	line-height: 1;
+	min-width: 0.75rem;
+	padding: 2px 5px;
+	text-align: center;
+	transition-duration: 100ms;
+	transition-property: translate, box-shadow;
+	transition-timing-function: ease;
+	translate: 0 -1px;
+
+	&:hover {
+		box-shadow: 0 1px 0 0.5px var(--kbd-color-border);
+		translate: 0 1px;
+	}
 }
 
 ::selection {

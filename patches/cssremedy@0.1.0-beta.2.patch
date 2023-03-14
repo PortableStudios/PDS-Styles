@@ -1,5 +1,5 @@
 diff --git a/css/remedy.css b/css/remedy.css
-index ccb4ca7c0548e3a7c81b22f3967749590aa3109f..85ba35e59dc9cde3f6bf5dba2a46e7bae6057062 100644
+index ccb4ca7c0548e3a7c81b22f3967749590aa3109f..07bc7cda2b9a0425eb98cd515803617f0ed1b4ec 100644
 --- a/css/remedy.css
 +++ b/css/remedy.css
 @@ -71,7 +71,10 @@ note: |
@@ -23,35 +23,8 @@ index ccb4ca7c0548e3a7c81b22f3967749590aa3109f..85ba35e59dc9cde3f6bf5dba2a46e7ba
    overflow: visible;
  }
  
-@@ -117,7 +120,7 @@ category: embedded elements
- img, svg, video, canvas, audio, iframe, embed, object {
-   display: block;
-   vertical-align: middle;
--  max-width: 100%;
-+  max-inline-size: 100%;
- }
- 
- 
-@@ -133,7 +136,7 @@ note: |
- category: embedded elements
- */
- img, svg, video, canvas {
--  height: auto;
-+  block-size: auto;
- }
- 
- 
-@@ -146,7 +149,7 @@ note: |
- 
- category: embedded elements
- */
--audio { width: 100%; }
-+audio { inline-size: 100%; }
- 
- 
- /* @docs
 diff --git a/css/reminders.css b/css/reminders.css
-index e99674c8338032be32cb8830027f117d1ab94a7d..1186e2f94cda607219990dc41ee868e818b44fe5 100644
+index e99674c8338032be32cb8830027f117d1ab94a7d..ebb26c09069a01b3304e796e5b631bcc7036b91c 100644
 --- a/css/reminders.css
 +++ b/css/reminders.css
 @@ -26,9 +26,9 @@ links:
@@ -74,24 +47,6 @@ index e99674c8338032be32cb8830027f117d1ab94a7d..1186e2f94cda607219990dc41ee868e8
 +nav li:before {
    content: "\200B";
    position: absolute;
--} */
-+}
- 
- 
- /* @docs
-@@ -61,7 +61,7 @@ links:
- 
- category: accessibility
- */
--/* @media (prefers-reduced-motion: reduce) {
-+@media (prefers-reduced-motion: reduce) {
-   *, ::before, ::after {
-     animation-delay: -1s !important;
-     animation-duration: 1s !important;
-@@ -70,7 +70,7 @@ category: accessibility
-     scroll-behavior: auto !important;
-     transition-duration: 0s !important;
-   }
 -} */
 +}
  

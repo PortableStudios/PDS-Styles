@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML test page</title>
-	<link rel="stylesheet" href="./dist/pds-styles.css">
+	<link rel="stylesheet" href="./dist/resets.css">
+	<link rel="stylesheet" href="./dist/styles.css">
 </head>
 
 <body>
@@ -192,7 +193,7 @@
 			<p><code>kbd</code> and <code>samp</code>: I did this:</p>
 			<pre><samp>c:\&gt;<kbd>format c: /yes</kbd></samp></pre>
 			<p>
-				Is that bad? Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> for a hard reload.
+				Is that bad? Press <kbd class="key">Ctrl</kbd>+<kbd class="key">F5</kbd> for a hard reload.
 			</p>
 			<p>
 				<code>var</code>: To log in, type
@@ -437,31 +438,30 @@
 				<output name="o" for="a b"></output>
 			</form>
 			<p><code>pre</code>:</p>
-			<pre>pre {
-display: block;
-padding: 7px;
-background-color: #F5F5F5;
-border: 1px solid #E1E1E8;
-border-radius: 3px;
-white-space: pre-wrap;
-word-break: break-all;
-font-family: Menlo, Monaco;
-line-height: 160%;
-}</pre>
-			<pre><samp>You are in an open field west of a big white house with a boarded
-front door.
+			<pre tabindex="0"><code>pre {
+	display: block;
+	padding: 7px;
+	background-color: #F5F5F5;
+	border: 1px solid #E1E1E8;
+	border-radius: 3px;
+	white-space: pre-wrap;
+	word-break: break-all;
+	font-family: Menlo, Monaco;
+	line-height: 160%;
+}</code></pre>
+			<pre tabindex="0"><samp>You are in an open field west of a big white house with a boarded front door.
 There is a small mailbox here.
 
-></samp> <kbd>open mailbox</kbd>
+&gt;</samp> <kbd>open mailbox</kbd>
 
 <samp>Opening the mailbox reveals:
 A leaflet.
 
-></samp></pre>
+&gt;</samp></pre>
 			<br><br>
 			<h4 id="tables"><a href="#tables">#</a> Tables</h4>
 			<hr>
-			<div style="overflow-x: auto;">
+			<div style="overflow-x: auto;" tabindex="0">
 				<table>
 					<caption>
 						Tables can have captions now.
@@ -509,7 +509,7 @@ A leaflet.
 				column, with the negative side in the left column and the positive
 				side in the right column.
 			</p>
-			<div style="overflow-x: auto;">
+			<div style="overflow-x: auto;" tabindex="0">
 				<table aria-describedby="table-summary">
 					<caption>
 						Characteristics with positive and negative sides
@@ -535,7 +535,7 @@ A leaflet.
 					</tbody>
 				</table>
 			</div>
-			<div style="overflow-x: auto;">
+			<div style="overflow-x: auto;" tabindex="0">
 				<table>
 					<caption>
 						Complex table with a

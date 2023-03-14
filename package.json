@@ -23,8 +23,8 @@
 		"stylelint-order": "^6.0.2"
 	},
 	"scripts": {
-		"start": "postcss css/all.css -o dist/pds-styles.css --watch --verbose",
-		"build": "postcss css/all.css -o dist/pds-styles.css",
+		"start": "postcss css/resets.css css/styles.css -d dist --watch --verbose",
+		"build": "postcss css/resets.css css/styles.css -d dist",
 		"clean": "rimraf dist",
 		"format": "prettier . --write",
 		"lint": "stylelint \"css/**/*.css\" --fix"
