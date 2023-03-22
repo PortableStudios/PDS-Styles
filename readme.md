@@ -4,12 +4,9 @@ For more details see the [PDS Docs site](https://pds-docs.netlify.app/).
 
 ## To do
 
-- [ ] Add defaults
-  - [ ] Including print styles
-- [ ] Add layouts
-- [ ] Go over reset
-- [ ] Finish adding basic themes
-- [ ] Remove `tokens/colour.css` but first move comments to docs
+- [ ] Print styles
+- [ ] Layouts
+- [ ] Themes
 
 ## Installation
 
