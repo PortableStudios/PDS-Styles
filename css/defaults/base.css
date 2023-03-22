@@ -1,40 +1,85 @@
-/* Remove default margin and padding on everything */
-* {
-	margin: 0;
-	padding: 0;
+blockquote,
+dd,
+dir,
+figure,
+menu,
+ol,
+ul {
+	padding-inline: var(--space-s, 1em);
 }
 
-main > :is(section, article) {
-	--gap: clamp(1rem, 6vw, 3rem);
-	--full: minmax(var(--gap), 1fr);
-	--content: min(50ch, 100% - var(--gap) * 2);
-	--popout: minmax(0, 2rem);
-	--feature: minmax(0, 5rem);
+nav,
+header,
+main,
+footer,
+section,
+article,
+details {
+	margin-block: var(--space-s, 1em);
+}
 
-	display: grid;
-	grid-template-columns:
-		[full-start] var(--full)
-		[feature-start] var(--feature)
-		[popout-start] var(--popout)
-		[content-start] var(--content) [content-end]
-		var(--popout) [popout-end]
-		var(--feature) [feature-end]
-		var(--full) [full-end];
-	row-gap: var(--space-s);
+main {
+	padding-block: var(--space-s, 1em);
 
-	> * {
-		grid-column: content;
+	> :is(section, article) {
+		--gap: clamp(1rem, 6vw, 3rem);
+		--full: minmax(var(--gap), 1fr);
+		--content: min(50ch, 100% - var(--gap) * 2);
+		--popout: minmax(0, 2rem);
+		--feature: minmax(0, 5rem);
+
+		display: grid;
+		grid-template-columns:
+			[full-start] var(--full)
+			[feature-start] var(--feature)
+			[popout-start] var(--popout)
+			[content-start] var(--content) [content-end]
+			var(--popout) [popout-end]
+			var(--feature) [feature-end]
+			var(--full) [full-end];
+		row-gap: var(--space-s);
+
+		> * {
+			grid-column: content;
+		}
+
+		.popout {
+			grid-column: popout;
+		}
+
+		.feature {
+			grid-column: feature;
+		}
+
+		.full {
+			grid-column: full;
+		}
 	}
+}
 
-	.popout {
-		grid-column: popout;
-	}
+th,
+td {
+	padding: var(--space-2xs, 0.5em);
+}
 
-	.feature {
-		grid-column: feature;
-	}
+code,
+kbd,
+pre,
+samp {
+	border: thin solid var(--ButtonBorder, ButtonBorder);
+}
 
-	.full {
-		grid-column: full;
-	}
+pre {
+	padding: var(--space-3xs, 0.25em) var(--space-2xs, 0.5em);
+}
+
+code,
+kbd,
+samp {
+	padding: var(--space-4xs, 0.125em) var(--space-3xs, 0.25em);
+}
+
+pre :is(code, kbd, samp) {
+	border: none;
+	padding: 0;
 }

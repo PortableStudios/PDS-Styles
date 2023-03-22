@@ -1,6 +1,38 @@
+button {
+	line-height: 1.1;
+	padding-block: 0.25em;
+	padding-inline: 1em;
+}
+
+textarea {
+	margin-block-end: 1em;
+}
+
+input:is([type="tel"], [type="text"]),
+textarea {
+	padding-block: 0.25em;
+	padding-inline: 0.5em;
+}
+
+select {
+	padding-block: 0.25em;
+	padding-inline: 0.25em;
+}
+
+input:not([type="checkbox"], [type="radio"]),
+select {
+	line-height: 1.1;
+	margin-block-end: 1em;
+}
+
 input:not([type="checkbox"], [type="file"], [type="radio"]),
 select,
 textarea {
 	border-color: var(--field-border, var(--border, currentColor));
-	padding: revert-layer;
+}
+
+::file-selector-button {
+	margin-block-end: 1em;
+	padding-block: 0.25em;
+	padding-inline: 1em;
 }

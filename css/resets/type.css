@@ -6,7 +6,6 @@ h5,
 h6,
 p,
 li {
-	max-width: var(--measure, 75ch);
 	overflow-wrap: break-word;
 	text-wrap: balance;
 }

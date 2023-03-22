@@ -1,25 +1,6 @@
-blockquote,
-dd,
-dir,
-figure,
-menu,
-ol,
-ul {
-	padding-inline: var(--space-s, 1em);
-}
-
-nav,
-header,
-main,
-footer,
-section,
-article,
-details {
-	margin-block: var(--space-s, 1em);
-}
-
-main {
-	padding-block: var(--space-s, 1em);
+* {
+	margin: 0;
+	padding: 0;
 }
 
 table {
@@ -30,30 +11,10 @@ table {
 th,
 td {
 	border: thin solid var(--CanvasText, CanvasText);
-	padding: var(--space-2xs, 0.5em);
-}
-
-code,
-kbd,
-pre,
-samp {
-	border: thin solid var(--ButtonBorder, ButtonBorder);
 }
 
 pre {
 	overflow: auto;
-	padding: var(--space-3xs, 0.25em) var(--space-2xs, 0.5em);
-}
-
-code,
-kbd,
-samp {
-	padding: var(--space-4xs, 0.125em) var(--space-3xs, 0.25em);
-}
-
-pre :is(code, kbd, samp) {
-	border: none;
-	padding: 0;
 }
 
 pre code {
