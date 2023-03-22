@@ -12,11 +12,9 @@
 		label:has(input),
 		select,
 		button,
-		[tabindex]:not([tabindex*="-"]),
 		input:is(
 				[type="checkbox"],
 				[type="file"],
-				[type="image"],
 				[type="radio"],
 				[type="range"]
 			)
