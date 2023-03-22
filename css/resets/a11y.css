@@ -44,8 +44,8 @@
 }
 
 :is(
-		input[disabled] ~ label[for],
-		label[for]:has(~ input[disabled]),
+		input[disabled] + label[for],
+		label[for]:has(+ input[disabled]),
 		label:has(input[disabled]),
 		[disabled]
 	) {
