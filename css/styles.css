@@ -1,5 +1,7 @@
-@layer defaults, themes, layouts, utilities;
+@layer tokens, resets, defaults, themes, layouts, utilities;
 
+@import url("tokens/index.css") layer(tokens);
+@import url("resets/index.css") layer(resets);
 @import url("defaults/index.css") layer(defaults);
 @import url("themes/index.css") layer(themes);
 @import url("layouts/index.css") layer(layouts);
