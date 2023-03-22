@@ -1,5 +1,7 @@
 # PDS Styles
 
+For more details see the [PDS Docs site](https://pds-docs.netlify.app/).
+
 ## To do
 
 - [ ] Add defaults
@@ -11,14 +13,14 @@
 
 ## Installation
 
-**🚨 This is not setup yet 🚨**
+This is just installing from the GitHub repo.
 
-```sh
-npm install @pds/styles
+```shell
+npm install PortableStudios/PDS-Styles
 # or
-yarn add @pds/styles
+yarn add PortableStudios/PDS-Styles
 # or
-pnpm add @pds/styles
+pnpm add PortableStudios/PDS-Styles
 ```
 
 ## Development
