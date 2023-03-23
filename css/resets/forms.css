@@ -52,12 +52,6 @@ progress {
 	accent-color: var(--SelectedItem, SelectedItem);
 }
 
-/*
- * Sets the label text for any of the following situations:
- * 1. `<label for></label><input id>`
- * 2. `<input id><label for></label>`
- * 3. `<label><input></label>`
- */
 input:is([type="checkbox"], [type="radio"], [type="range"])[id] ~ label[for],
 label:has(input:is([type="checkbox"], [type="radio"], [type="range"])),
 label[for]:has(
