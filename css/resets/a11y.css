@@ -50,8 +50,5 @@
 		[disabled]
 	) {
 	cursor: not-allowed;
-}
-
-[disabled] {
 	color: var(--GrayText, GrayText);
 }
