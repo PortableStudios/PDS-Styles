@@ -1,14 +1,31 @@
+@keyframes smoothscroll1 {
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes smoothscroll2 {
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
 html {
-	block-size: 100%;
-	font-size: max(1em, 20px);
-	text-size-adjust: none;
+  animation: smoothscroll1 1s;
+  block-size: 100%;
+  font-size: max(1em, 20px);
+  text-size-adjust: none;
 
-	/* scrollbar-gutter: stable both-edges; Removed until this bug is fixed: https://bugs.chromium.org/p/chromium/issues/detail?id=1318404#c2 */
+  /* scrollbar-gutter: stable both-edges; */
 
-	/* Smooth scrolling for users that don't prefer reduced motion */
-	@media (prefers-reduced-motion: no-preference) {
-		scroll-behavior: smooth;
-	}
+  &:focus-within {
+    @media (prefers-reduced-motion: no-preference) {
+      animation-name: smoothscroll2;
+      scroll-behavior: smooth;
+    }
+  }
 }
 
 body {
