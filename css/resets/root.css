@@ -16,8 +16,8 @@ html {
 body {
 	background-color: var(--Canvas, Canvas);
 	color: var(--CanvasText, CanvasText);
-	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol", "Noto Color Emoji";
 	margin: var(--space-s, 1em) var(--space-s, 1em);
 	min-block-size: 100%;
 }
