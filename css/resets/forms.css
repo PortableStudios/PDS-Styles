@@ -3,16 +3,11 @@ button {
 	border-color: var(--ButtonBorder, ButtonBorder);
 	color: var(--ButtonText, ButtonText);
 	font: inherit;
-	line-height: 1.1;
-	margin: 0;
-	padding-block: 0.25em;
-	padding-inline: 1em;
 }
 
 textarea {
 	display: block;
 	font: inherit;
-	margin-block-end: 1em;
 	min-height: 6em;
 	min-height: 6lh; /* Not yet well supported, so keeping in a fallback for now */
 	resize: vertical;
@@ -21,26 +16,13 @@ textarea {
 }
 
 fieldset {
-	border: thin solid var(--CanvasText, CanvasText);
-}
-
-input:is([type="tel"], [type="text"]),
-textarea {
-	padding-block: 0.25em;
-	padding-inline: 0.5em;
-}
-
-select {
-	padding-block: 0.25em;
-	padding-inline: 0.25em;
+	border: 0;
 }
 
 input:not([type="checkbox"], [type="radio"]),
 select {
 	display: block;
 	font: inherit;
-	line-height: 1.1;
-	margin-block-end: 1em;
 	width: 100%;
 }
 
@@ -70,12 +52,6 @@ progress {
 	accent-color: var(--SelectedItem, SelectedItem);
 }
 
-/*
- * Sets the label text for any of the following situations:
- * 1. `<label for></label><input id>`
- * 2. `<input id><label for></label>`
- * 3. `<label><input></label>`
- */
 input:is([type="checkbox"], [type="radio"], [type="range"])[id] ~ label[for],
 label:has(input:is([type="checkbox"], [type="radio"], [type="range"])),
 label[for]:has(
@@ -101,9 +77,5 @@ label[for]:has(
 	cursor: pointer;
 	display: block;
 	font: inherit;
-	margin: 0;
-	margin-block-end: 1em;
-	padding-block: 0.25em;
-	padding-inline: 1em;
 	width: 100%;
 }

@@ -12,11 +12,9 @@
 		label:has(input),
 		select,
 		button,
-		[tabindex]:not([tabindex*="-"]),
 		input:is(
 				[type="checkbox"],
 				[type="file"],
-				[type="image"],
 				[type="radio"],
 				[type="range"]
 			)
@@ -46,14 +44,11 @@
 }
 
 :is(
-		input[disabled] ~ label[for],
-		label[for]:has(~ input[disabled]),
+		input[disabled] + label[for],
+		label[for]:has(+ input[disabled]),
 		label:has(input[disabled]),
 		[disabled]
 	) {
 	cursor: not-allowed;
-}
-
-[disabled] {
 	color: var(--GrayText, GrayText);
 }

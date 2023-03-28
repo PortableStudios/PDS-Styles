@@ -7,6 +7,21 @@
 	line-height: calc(0.25rem + 1em + 0.25rem);
 }
 
+/******************
+ * TEXT ELEMENTS *
+ ******************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+	max-width: var(--measure, 75ch);
+}
+
 /********************
  * HEADING ELEMENTS *
  ********************/
@@ -72,10 +87,10 @@ pre {
 }
 
 pre[class*="language-"] {
-	padding: 0;
-
+	padding: var(--space-s, 1em);
+	
 	> code {
-		padding: var(--space-s, 1em);
+		padding: 0;
 	}
 }
 
