@@ -10,14 +10,12 @@ For more details see the [PDS Docs site](https://pds-docs.netlify.app/).
 
 ## Installation
 
-This is just installing from the GitHub repo.
-
 ```shell
-npm install PortableStudios/PDS-Styles
+npm install @portablestudios/pds-styles
 # or
-yarn add PortableStudios/PDS-Styles
+yarn add @portablestudios/pds-styles
 # or
-pnpm add PortableStudios/PDS-Styles
+pnpm add @portablestudios/pds-styles
 ```
 
 ## Development
