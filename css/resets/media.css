@@ -13,7 +13,7 @@ iframe {
 	--ratio: 16 / 9;
 }
 
-svg {
+svg:not([data-icon]) {
 	fill: var(--fill, var(--svg, currentcolor));
 	stroke: var(--stroke, var(--svg, currentcolor));
 	stroke-width: 0;
