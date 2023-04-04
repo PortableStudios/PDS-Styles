@@ -21,4 +21,6 @@ svg:not([data-icon]) {
 
 [data-icon] {
 	display: inline-block;
+	max-width: unset;
+	pointer-events: none;
 }
