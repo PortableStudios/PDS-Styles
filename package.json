@@ -1,19 +1,37 @@
 {
 	"name": "@portablestudios/pds-styles",
 	"version": "0.1.0",
-	"author": "Elly Loel <hello@ellyloel.com>",
-	"license": "MIT",
-	"type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PortableStudios/PDS-Styles.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-	"browserslist": [
-		"defaults"
+	"keywords": [
+		"css",
+		"reset",
+		"default"
 	],
+	"homepage": "https://github.com/PortableStudios/PDS-Styles#readme",
+	"bugs": {
+		"url": "https://github.com/PortableStudios/PDS-Styles/issues"
+	},
+	"license": "MIT",
+	"author": "Elly Loel <elly.loel@portable.com.au>",
+	"contributors": [
+		"Elly Loel <elly.loel@portable.com.au>"
+	],
+	"files": [
+		"dist/"
+	],
+	"main": "dist/styles.css",
+	"style": "dist/styles.css",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PortableStudios/PDS-Styles.git"
+	},
+	"scripts": {
+		"start": "postcss css/styles.css -d dist --watch --verbose",
+		"build": "postcss css/styles.css -d dist",
+		"clean": "rimraf dist",
+		"format": "prettier . --write",
+		"lint": "stylelint \"css/**/*.css\" --fix"
+	},
 	"devDependencies": {
 		"a11y.css": "^5.2.0",
 		"cssnano": "^5.1.14",
@@ -29,16 +47,15 @@
 		"stylelint-config-standard": "^30.0.1",
 		"stylelint-order": "^6.0.2"
 	},
-	"scripts": {
-		"start": "postcss css/styles.css -d dist --watch --verbose",
-		"build": "postcss css/styles.css -d dist",
-		"clean": "rimraf dist",
-		"format": "prettier . --write",
-		"lint": "stylelint \"css/**/*.css\" --fix"
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
 	},
 	"pnpm": {
 		"patchedDependencies": {
 			"cssremedy@0.1.0-beta.2": "patches/cssremedy@0.1.0-beta.2.patch"
 		}
-	}
+	},
+	"browserslist": [
+		"defaults"
+	]
 }
