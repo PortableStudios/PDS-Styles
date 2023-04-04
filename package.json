@@ -4,6 +4,13 @@
 	"author": "Elly Loel <hello@ellyloel.com>",
 	"license": "MIT",
 	"type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PortableStudios/PDS-Styles.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
 	"browserslist": [
 		"defaults"
 	],
