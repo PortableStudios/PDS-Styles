@@ -10,6 +10,7 @@
 	-webkit-box-orient: vertical;
 	display: -webkit-box;
 	-webkit-line-clamp: var(--lines-to-truncate, 3);
+	overflow: hidden;
 }
 
 /* https://codepen.io/ellyloel/pen/eYjoVEg */
