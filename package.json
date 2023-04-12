@@ -1,6 +1,6 @@
 {
 	"name": "@portablestudios/pds-styles",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"keywords": [
 		"css",
 		"reset",
@@ -16,7 +16,8 @@
 		"Elly Loel <elly.loel@portable.com.au>"
 	],
 	"files": [
-		"dist/"
+		"dist/",
+		"css/"
 	],
 	"main": "dist/styles.css",
 	"style": "dist/styles.css",
