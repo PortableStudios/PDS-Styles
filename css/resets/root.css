@@ -1,31 +1,31 @@
 @keyframes smoothscroll1 {
-  from,
-  to {
-    scroll-behavior: smooth;
-  }
+	from,
+	to {
+		scroll-behavior: smooth;
+	}
 }
 
 @keyframes smoothscroll2 {
-  from,
-  to {
-    scroll-behavior: smooth;
-  }
+	from,
+	to {
+		scroll-behavior: smooth;
+	}
 }
 
 html {
-  animation: smoothscroll1 1s;
-  block-size: 100%;
-  font-size: max(1em, 20px);
-  text-size-adjust: none;
+	animation: smoothscroll1 1s;
+	block-size: 100%;
+	font-size: max(1em, 20px);
+	text-size-adjust: none;
 
-  /* scrollbar-gutter: stable both-edges; */
+	/* scrollbar-gutter: stable both-edges; */
 
-  &:focus-within {
-    @media (prefers-reduced-motion: no-preference) {
-      animation-name: smoothscroll2;
-      scroll-behavior: smooth;
-    }
-  }
+	&:focus-within {
+		@media (prefers-reduced-motion: no-preference) {
+			animation-name: smoothscroll2;
+			scroll-behavior: smooth;
+		}
+	}
 }
 
 body {
@@ -40,8 +40,4 @@ body {
 ::selection {
 	background-color: var(--Highlight, Highlight);
 	color: var(--HighlightText, HighlightText);
-}
-
-[hidden] {
-	display: none !important;
 }
